@@ -1,0 +1,5 @@
+#blog-feed
+  each post, slug in public.blog._data
+    .row
+      h2: a(href="/blog/#{slug}")= post.title
+      small.text-muted #{post.date}
